@@ -1,4 +1,4 @@
-package com.dream.ds;
+package com.dream.ds.linear;
 class Node{
 	Node next;
 	int data;
