@@ -14,7 +14,6 @@ public class CountDigit {
 	}
 
 	private static int countDigitRec(int x) {
-		// TODO Auto-generated method stub
 		if(x == 0)
 			return 0;
 		return 1 + countDigitRec(x/10);
