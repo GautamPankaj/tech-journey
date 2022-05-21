@@ -1,4 +1,4 @@
-package goal.mathematics;
+package main.goal.mathematics;
 
 public class CountDigit {
 
@@ -12,13 +12,13 @@ public class CountDigit {
 		System.out.println("total digit rec is  " + countRec);
 	}
 
-	private static int countDigitRec(int x) {
+	public static int countDigitRec(int x) {
 		if(x == 0)
 			return 0;
 		return 1 + countDigitRec(x/10);
 	}
 
-	private static int countDigit(int x) {
+	public static int countDigit(int x) {
 		int count = 0;
 		while (x > 0) {
 			x = x/10;
