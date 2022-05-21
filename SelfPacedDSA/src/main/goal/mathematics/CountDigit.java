@@ -3,25 +3,24 @@ package main.goal.mathematics;
 public class CountDigit {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
-		int x = 923;
-		int count = countDigit(x);
+		int digit = 923;
+		int count = countDigit(digit);
 		System.out.println("total digit " + count);
 		
-		int countRec = countDigitRec(x);
-		System.out.println("total digit rec is  " + countRec);
+		int countFromRec = countDigitRec(digit);
+		System.out.println("total digit from recursion is  " + countFromRec);
 	}
 
-	public static int countDigitRec(int x) {
-		if(x == 0)
+	public static int countDigitRec(int digit) {
+		if(digit == 0)
 			return 0;
-		return 1 + countDigitRec(x/10);
+		return 1 + countDigitRec(digit/10);
 	}
 
-	public static int countDigit(int x) {
+	public static int countDigit(int digit) {
 		int count = 0;
-		while (x > 0) {
-			x = x/10;
+		while (digit > 0) {
+			digit = digit/10;
 			count++;
 		}
 		return count;
