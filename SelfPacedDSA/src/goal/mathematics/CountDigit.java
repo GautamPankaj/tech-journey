@@ -19,7 +19,6 @@ public class CountDigit {
 	}
 
 	private static int countDigit(int x) {
-		// TODO Auto-generated method stub
 		int count = 0;
 		while (x > 0) {
 			x = x/10;
